@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+root{
+    --stdMar:3rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(29, 2, 2, 1);
+}
+#landingpage{
+    margin: 0 var(--stdMar);
+    /*Adding grid*/
+    display: grid;
+    grid-template-columns: repeat(30,1fr);
+    column-gap: 10px;
+}
+#herosection{
+    margin: auto 0;
+    color:white;
+    grid-column: 2/9;
+    cap:2rem;
+    
+}
+#herotext{
+    position:relative;
+    margin-left: 10px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+#heroDiscription{
+    width: 100%;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #CC3939;
+    
+}
+#ctahelper{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    color: #FF0000;
+    font-size: 14px;
+
+}
+#CTA{
+    width: 100%;
+    height: 40px;   
+    border-radius: 20px;
+    color: #CC3939;
+}
+#logo{
+    position: fixed;
+    top: 1rem;
+    left: var(--stdMar);
+    margin-left: 15px;
+}
+#AnimeTitle,#imagesection{
+    
+}
+#imagesection{
+    height: 95vh;
+    background-image:linear-gradient(90deg, rgba(29,2,2,1) 0%, rgba(57, 2, 2, 0.06) 101.42%),url(image.jpg) ;
+    grid-column: 11/-1;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    right:calc(-1* var(--stdMar));
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+#AnimeTitle{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
